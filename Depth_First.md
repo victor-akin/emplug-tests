@@ -14,23 +14,16 @@ once. Not marking nodes as visitedresults in a infinite loop
 `lets say we have a group of nodes represemted as objects
 
 let *Nodes* = {
-    {
-    
-        node_id: 1,
+        {node_id: 1,
         visited: false
-    },
-  
-  {
-        node_id: 2,
+        },
+        {node_id: 2,
         visited: false
-    },
-  
-  {
-        node_id: 3,
-        visited: false
-    }
-    ...
-}`
+        },
+        {node_id: 3,
+        visited: false}
+        ...
+    }`
 
 Each object in the *Nodes* object is adjacent to two other nodes except the root 
 node which in this case is the object with node_id: 1
