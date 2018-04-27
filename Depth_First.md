@@ -12,21 +12,26 @@ are visited are marked. This will prevents us from visiting the same node more t
 once. Not marking nodes as visitedresults in a infinite loop
 
 `lets say we have a group of nodes represemted as objects
+
 let *Nodes* = {
     {
+    
         node_id: 1,
         visited: false
     },
-    {
+  
+  {
         node_id: 2,
         visited: false
     },
-    {
+  
+  {
         node_id: 3,
         visited: false
     }
     ...
 }`
+
 Each object in the *Nodes* object is adjacent to two other nodes except the root 
 node which in this case is the object with node_id: 1
 and the end node which will be where ever we decide to terminate our object in 
